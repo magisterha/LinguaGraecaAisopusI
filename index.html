@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fábula de Esopo: El Águila, el Grajo y el Pastor</title>
+    <title>Aesopi fabula: De aquila, graculo et pastore</title>
     
     <style type="text/css">
         /* --- Tailwind CSS Pre-compilado (Preflight & Utilitarios Usados) --- */
@@ -60,13 +60,13 @@
         <main>
             <header class="text-center mb-10 border-b-2 border-stone-300 pb-5">
                 <h1 class="text-5xl textum-classicum text-gray-800">ΑΕΤΟΣ ΚΑΙ ΚΟΛΟΙΟΣ ΚΑΙ ΠΟΙΜΗΝ</h1>
-                <h2 class="text-2xl text-gray-600 mt-2">The Eagle, the Jackdaw, and the Shepherd</h2>
+                <h2 id="subtitle" class="text-2xl text-gray-600 mt-2">The Eagle, the Jackdaw, and the Shepherd</h2>
             </header>
             
             <div id="paragrafus-contentus" class="textum-classicum text-xl leading-relaxed text-justify bg-white p-8 lg:p-12 rounded-lg shadow-lg"></div>
             
             <footer class="text-center mt-6 text-sm text-gray-500">
-                <p><i>Click a word to see its analysis and the sentence translation.</i></p>
+                <p id="footer-text"><i>Click a word to see its analysis and the sentence translation.</i></p>
             </footer>
         </main>
 
@@ -91,7 +91,7 @@
             orationes: [
                 {
                     id_orationis: 'o1',
-                    textus_latinus: "ἀετὸς καταπτὰς ἀπό τινος ὑψηλῆς πέτρας ἄρνα ἥρπασε·",
+                    textus_graecus: "ἀετὸς καταπτὰς ἀπό τινος ὑψηλῆς πέτρας ἄρνα ἥρπασε·",
                     translationes: { 
                         en: '<strong>English</strong>: An eagle, flying down from a high rock, snatched a lamb.',
                         es: '<strong>Español</strong>: Un águila, descendiendo desde una alta roca, arrebató un cordero.', 
@@ -99,7 +99,7 @@
                     },
                     verba: [
                         { id_verbi: 'v1_1', terminus: 'ἀετὸς', analysis_morphologicus_en: 'Noun: nominative masculine singular.', analysis_morphologicus: 'Sustantivo: nominativo masculino singular.', analysis_morphologicus_zh: '名詞：主格、陽性、單數。', significationes: { en: 'eagle', es: 'águila', zh: '老鷹' } },
-                        { id_verbi: 'v1_2', terminus: 'καταπτὰς', analysis_morphologicus_en: 'Aorist active participle: nominative masculine singular from καταπέτομαι.', analysis_morphologicus: 'Participio de aoristo activo: nominativo masculino singular de καταπέτομαι.', analysis_morphologicus_zh: '不定過去時主動分詞：主格、陽性、單數，來自 καταπέτομαι。', significationes: { en: 'flying down, having flown down', es: 'descendiendo, habiendo descendido', zh: '俯衝下來' } },
+                        { id_verbi: 'v1_2', terminus: 'καταπτὰς', analysis_morphologicus_en: 'Aorist active participle: nominative masculine singular from καταπίπτω.', analysis_morphologicus: 'Participio de aoristo activo: nominativo masculino singular de καταπίπτω.', analysis_morphologicus_zh: '不定過去時主動分詞：主格、陽性、單數，來自 καταπίπτω。', significationes: { en: 'flying down, having flown down', es: 'descendiendo, habiendo descendido', zh: '俯衝下來' } },
                         { id_verbi: 'v1_3', terminus: 'ἀπό', analysis_morphologicus_en: 'Preposition (takes genitive).', analysis_morphologicus: 'Preposición de genitivo.', analysis_morphologicus_zh: '介詞（搭配屬格）。', significationes: { en: 'from', es: 'desde, de', zh: '從' } },
                         { id_verbi: 'v1_4', terminus: 'τινος', analysis_morphologicus_en: 'Indefinite pronoun: genitive feminine singular from τις.', analysis_morphologicus: 'Pronombre indefinido: genitivo femenino singular de τις.', analysis_morphologicus_zh: '不定代名詞：屬格、陰性、單數，來自 τις。', significationes: { en: 'a certain, some', es: 'una cierta, alguna', zh: '某一個' } },
                         { id_verbi: 'v1_5', terminus: 'ὑψηλῆς', analysis_morphologicus_en: 'Adjective: genitive feminine singular.', analysis_morphologicus: 'Adjetivo: genitivo femenino singular.', analysis_morphologicus_zh: '形容詞：屬格、陰性、單數。', significationes: { en: 'high', es: 'alta', zh: '高的' } },
@@ -110,7 +110,7 @@
                 },
                 {
                     id_orationis: 'o2',
-                    textus_latinus: "κολοιὸς δὲ τοῦτον θεασάμενος διὰ ζῆλον μιμήσασθαι ἤθελε.",
+                    textus_graecus: "κολοιὸς δὲ τοῦτον θεασάμενος διὰ ζῆλον μιμήσασθαι ἤθελε.",
                     translationes: { 
                         en: '<strong>English</strong>: A jackdaw, seeing him, wanted to imitate him out of jealousy.',
                         es: '<strong>Español</strong>: Un grajo, habiéndolo visto, por envidia quiso imitarlo.', 
@@ -129,7 +129,7 @@
                 },
                 {
                     id_orationis: 'o3',
-                    textus_latinus: "καὶ δὴ καθεὶς ἑαυτὸν μετὰ πολλοῦ ῥοίζου ἐπὶ κριὸν ἠνέχθη.",
+                    textus_graecus: "καὶ δὴ καθεὶς ἑαυτὸν μετὰ πολλοῦ ῥοίζου ἐπὶ κριὸν ἠνέχθη.",
                     translationes: { 
                         en: '<strong>English</strong>: And so, letting himself down with a great rushing sound, he was carried upon a ram.',
                         es: '<strong>Español</strong>: Y en efecto, lanzándose con gran estrépito, se precipitó sobre un carnero.', 
@@ -150,7 +150,7 @@
                 },
                 {
                     id_orationis: 'o4',
-                    textus_latinus: "ἐμπαρέντων δὲ αὐτοῦ τῶν ὀνύχων τοῖς μαλλοῖς ἐξαρθῆναι μὴ δυνάμενος ἐπτερύσσετο, ἕως ὁ ποιμὴν τὸ γεγονὸς αἰσθόμενος προσδραμὼν συνέλαβεν αὐτὸν καὶ περικόψας αὐτοῦ τὰ ὀξύπτερα, ὡς ἑσπέρα κατέλαβε, τοῖς αὐτοῦ παισὶν ἐκόμισε.",
+                    textus_graecus: "ἐμπαρέντων δὲ αὐτοῦ τῶν ὀνύχων τοῖς μαλλοῖς ἐξαρθῆναι μὴ δυνάμενος ἐπτερύσσετο, ἕως ὁ ποιμὴν τὸ γεγονὸς αἰσθόμενος προσδραμὼν συνέλαβεν αὐτὸν καὶ περικόψας αὐτοῦ τὰ ὀξύπτερα, ὡς ἑσπέρα κατέλαβε, τοῖς αὐτοῦ παισὶν ἐκόμισε.",
                     translationes: { 
                         en: '<strong>English</strong>: But when his claws became entangled in the wool, unable to fly away, he flapped his wings, until the shepherd, perceiving what had happened, ran up and captured him. After clipping his flight feathers, when evening came, he brought him to his children.',
                         es: '<strong>Español</strong>: Pero al enredársele las garras en la lana, sin poder levantar el vuelo, aleteaba, hasta que el pastor, dándose cuenta de lo sucedido, corriendo hacia él lo capturó y, tras cortarle las plumas de las alas, cuando llegó la tarde, se lo llevó a sus hijos.', 
@@ -158,48 +158,48 @@
                     },
                     verba: [
                         { id_verbi: 'v4_1', terminus: 'ἐμπαρέντων', analysis_morphologicus_en: 'Aorist passive participle: genitive masculine plural from ἐμπείρω (genitive absolute).', analysis_morphologicus: 'Participio de aoristo pasivo: genitivo masculino plural de ἐμπείρω (en genitivo absoluto).', analysis_morphologicus_zh: '不定過去時被動分詞：屬格、陽性、複數，來自 ἐμπείρω (用於屬格獨立結構)。', significationes: { en: 'having been entangled', es: 'habiendo sido enredadas', zh: '被纏住' } },
-                        { id_verbi: 'v4_3', terminus: 'ὀνύχων', analysis_morphologicus_en: 'Noun: genitive masculine plural.', analysis_morphologicus: 'Sustantivo: genitivo masculino plural.', analysis_morphologicus_zh: '名詞：屬格、陽性、複數。', significationes: { en: 'of the claws', es: 'de las garras', zh: '爪子' } },
-                        { id_verbi: 'v4_5', terminus: 'μαλλοῖς', analysis_morphologicus_en: 'Noun: dative masculine plural.', analysis_morphologicus: 'Sustantivo: dativo masculino plural.', analysis_morphologicus_zh: '名詞：與格、陽性、複數。', significationes: { en: 'in the wool', es: 'en la lana', zh: '在羊毛裡' } },
-                        { id_verbi: 'v4_6', terminus: 'ἐξαρθῆναι', analysis_morphologicus_en: 'Aorist passive infinitive from ἐξαίρω.', analysis_morphologicus: 'Infinitivo de aoristo pasivo de ἐξαίρω.', analysis_morphologicus_zh: '不定過去時被動不定式，來自 ἐξαίρω。', significationes: { en: 'to be lifted up, to fly away', es: 'levantar el vuelo', zh: '飛起' } },
-                        { id_verbi: 'v4_7', terminus: 'μὴ', analysis_morphologicus_en: 'Negative particle.', analysis_morphologicus: 'Partícula negativa.', analysis_morphologicus_zh: '否定質詞。', significationes: { en: 'not', es: 'no', zh: '不' } },
-                        { id_verbi: 'v4_8', terminus: 'δυνάμενος', analysis_morphologicus_en: 'Present middle participle: nominative masculine singular from δύναμαι.', analysis_morphologicus: 'Participio de presente medio: nominativo masculino singular de δύναμαι.', analysis_morphologicus_zh: '現在時中間語態分詞：主格、陽性、單數，來自 δύναμαι。', significationes: { en: 'being able', es: 'pudiendo', zh: '能夠' } },
-                        { id_verbi: 'v4_9', terminus: 'ἐπτερύσσετο', analysis_morphologicus_en: 'Verb: 3rd person singular, imperfect middle indicative from πτερύσσω.', analysis_morphologicus: 'Verbo: 3ª persona del singular del imperfecto de indicativo medio de πτερύσσω.', analysis_morphologicus_zh: '動詞：未完成時、直陳語氣、中間語態、第三人稱單數，來自 πτερύσσω。', significationes: { en: 'he flapped his wings', es: 'aleteaba', zh: '拍打翅膀' } },
-                        { id_verbi: 'v4_10', terminus: 'ἕως', analysis_morphologicus_en: 'Temporal conjunction.', analysis_morphologicus: 'Conjunción temporal.', analysis_morphologicus_zh: '時間連接詞。', significationes: { en: 'until', es: 'hasta que', zh: '直到' } },
-                        { id_verbi: 'v4_12', terminus: 'ποιμὴν', analysis_morphologicus_en: 'Noun: nominative masculine singular.', analysis_morphologicus: 'Sustantivo: nominativo masculino singular.', analysis_morphologicus_zh: '名詞：主格、陽性、單數。', significationes: { en: 'shepherd', es: 'pastor', zh: '牧羊人' } },
-                        { id_verbi: 'v4_13', terminus: 'γεγονὸς', analysis_morphologicus_en: 'Perfect active participle (substantive): accusative neuter singular from γίγνομαι.', analysis_morphologicus: 'Participio de perfecto activo sustantivado: acusativo neutro singular de γίγνομαι.', analysis_morphologicus_zh: '完成時主動分詞(名詞化)：賓格、中性、單數，來自 γίγνομαι。', significationes: { en: 'what had happened', es: 'lo sucedido', zh: '發生的事' } },
-                        { id_verbi: 'v4_14', terminus: 'αἰσθόμενος', analysis_morphologicus_en: 'Aorist middle participle: nominative masculine singular from αἰσθάνομαι.', analysis_morphologicus: 'Participio de aoristo medio: nominativo masculino singular de αἰσθάνομαι.', analysis_morphologicus_zh: '不定過去時中間語態分詞：主格、陽性、單數，來自 αἰσθάνομαι。', significationes: { en: 'perceiving, noticing', es: 'dándose cuenta', zh: '注意到' } },
-                        { id_verbi: 'v4_15', terminus: 'προσδραμὼν', analysis_morphologicus_en: 'Aorist active participle: nominative masculine singular from προστρέχω.', analysis_morphologicus: 'Participio de aoristo activo: nominativo masculino singular de προστρέχω.', analysis_morphologicus_zh: '不定過去時主動分詞：主格、陽性、單數，來自 προστρέχω。', significationes: { en: 'running up to', es: 'corriendo hacia', zh: '跑過去' } },
-                        { id_verbi: 'v4_16', terminus: 'συνέλαβεν', analysis_morphologicus_en: 'Verb: 3rd person singular, aorist active indicative from συλλαμβάνω.', analysis_morphologicus: 'Verbo: 3ª persona del singular del aoristo de indicativo activo de συλλαμβάνω.', analysis_morphologicus_zh: '動詞：不定過去時、直陳語氣、主動語態、第三人稱單數，來自 συλλαμβάνω。', significationes: { en: 'captured', es: 'capturó', zh: '抓住' } },
-                        { id_verbi: 'v4_17', terminus: 'αὐτὸν', analysis_morphologicus_en: 'Personal pronoun: accusative masculine singular.', analysis_morphologicus: 'Pronombre personal: acusativo masculino singular.', analysis_morphologicus_zh: '人稱代名詞：賓格、陽性、單數。', significationes: { en: 'him', es: 'lo, a él', zh: '牠' } },
-                        { id_verbi: 'v4_18', terminus: 'περικόψας', analysis_morphologicus_en: 'Aorist active participle: nominative masculine singular from περικόπτω.', analysis_morphologicus: 'Participio de aoristo activo: nominativo masculino singular de περικόπτω.', analysis_morphologicus_zh: '不定過去時主動分詞：主格、陽性、單數，來自 περικόπτω。', significationes: { en: 'having clipped', es: 'habiendo cortado', zh: '剪掉之後' } },
-                        { id_verbi: 'v4_19', terminus: 'αὐτοῦ', analysis_morphologicus_en: 'Personal pronoun: genitive masculine singular.', analysis_morphologicus: 'Pronombre personal: genitivo masculino singular.', analysis_morphologicus_zh: '人稱代名詞：屬格、陽性、單數。', significationes: { en: 'his', es: 'de él, sus', zh: '牠的' } },
-                        { id_verbi: 'v4_20', terminus: 'ὀξύπτερα', analysis_morphologicus_en: 'Adjective (substantive): accusative neuter plural.', analysis_morphologicus: 'Adjetivo sustantivado: acusativo neutro plural.', analysis_morphologicus_zh: '形容詞(名詞化)：賓格、中性、複數。', significationes: { en: 'flight feathers', es: 'plumas de vuelo', zh: '飛羽' } },
-                        { id_verbi: 'v4_21', terminus: 'ὡς', analysis_morphologicus_en: 'Temporal conjunction.', analysis_morphologicus: 'Conjunción temporal.', analysis_morphologicus_zh: '時間連接詞。', significationes: { en: 'when', es: 'cuando', zh: '當' } },
-                        { id_verbi: 'v4_22', terminus: 'ἑσπέρα', analysis_morphologicus_en: 'Noun: nominative feminine singular.', analysis_morphologicus: 'Sustantivo: nominativo femenino singular.', analysis_morphologicus_zh: '名詞：主格、陰性、單數。', significationes: { en: 'evening', es: 'tarde, anochecer', zh: '傍晚' } },
-                        { id_verbi: 'v4_23', terminus: 'κατέλαβε', analysis_morphologicus_en: 'Verb: 3rd person singular, aorist active indicative from καταλαμβάνω.', analysis_morphologicus: 'Verbo: 3ª persona del singular del aoristo de indicativo activo de καταλαμβάνω.', analysis_morphologicus_zh: '動詞：不定過去時、直陳語氣、主動語態、第三人稱單數，來自 καταλαμβάνω。', significationes: { en: 'arrived, overtook', es: 'llegó', zh: '來臨' } },
-                        { id_verbi: 'v4_24', terminus: 'παισὶν', analysis_morphologicus_en: 'Noun: dative masculine plural.', analysis_morphologicus: 'Sustantivo: dativo masculino plural.', analysis_morphologicus_zh: '名詞：與格、陽性、複數。', significationes: { en: 'to his children', es: 'a sus hijos', zh: '給孩子們' } },
-                        { id_verbi: 'v4_25', terminus: 'ἐκόμισε', analysis_morphologicus_en: 'Verb: 3rd person singular, aorist active indicative from κομίζω.', analysis_morphologicus: 'Verbo: 3ª persona del singular del aoristo de indicativo activo de κομίζω.', analysis_morphologicus_zh: '動詞：不定過去時、直陳語氣、主動語態、第三人稱單數，來自 κομίζω。', significationes: { en: 'brought', es: 'llevó', zh: '帶給' } }
+                        { id_verbi: 'v4_2', terminus: 'ὀνύχων', analysis_morphologicus_en: 'Noun: genitive masculine plural.', analysis_morphologicus: 'Sustantivo: genitivo masculino plural.', analysis_morphologicus_zh: '名詞：屬格、陽性、複數。', significationes: { en: 'of the claws', es: 'de las garras', zh: '爪子' } },
+                        { id_verbi: 'v4_3', terminus: 'μαλλοῖς', analysis_morphologicus_en: 'Noun: dative masculine plural.', analysis_morphologicus: 'Sustantivo: dativo masculino plural.', analysis_morphologicus_zh: '名詞：與格、陽性、複數。', significationes: { en: 'in the wool', es: 'en la lana', zh: '在羊毛裡' } },
+                        { id_verbi: 'v4_4', terminus: 'ἐξαρθῆναι', analysis_morphologicus_en: 'Aorist passive infinitive from ἐξαίρω.', analysis_morphologicus: 'Infinitivo de aoristo pasivo de ἐξαίρω.', analysis_morphologicus_zh: '不定過去時被動不定式，來自 ἐξαίρω。', significationes: { en: 'to be lifted up, to fly away', es: 'levantar el vuelo', zh: '飛起' } },
+                        { id_verbi: 'v4_5', terminus: 'μὴ', analysis_morphologicus_en: 'Negative particle.', analysis_morphologicus: 'Partícula negativa.', analysis_morphologicus_zh: '否定質詞。', significationes: { en: 'not', es: 'no', zh: '不' } },
+                        { id_verbi: 'v4_6', terminus: 'δυνάμενος', analysis_morphologicus_en: 'Present middle participle: nominative masculine singular from δύναμαι.', analysis_morphologicus: 'Participio de presente medio: nominativo masculino singular de δύναμαι.', analysis_morphologicus_zh: '現在時中間語態分詞：主格、陽性、單數，來自 δύναμαι。', significationes: { en: 'being able', es: 'pudiendo', zh: '能夠' } },
+                        { id_verbi: 'v4_7', terminus: 'ἐπτερύσσετο,', analysis_morphologicus_en: 'Verb: 3rd person singular, imperfect middle indicative from πτερύσσω.', analysis_morphologicus: 'Verbo: 3ª persona del singular del imperfecto de indicativo medio de πτερύσσω.', analysis_morphologicus_zh: '動詞：未完成時、直陳語氣、中間語態、第三人稱單數，來自 πτερύσσω。', significationes: { en: 'he flapped his wings', es: 'aleteaba', zh: '拍打翅膀' } },
+                        { id_verbi: 'v4_8', terminus: 'ἕως', analysis_morphologicus_en: 'Temporal conjunction.', analysis_morphologicus: 'Conjunción temporal.', analysis_morphologicus_zh: '時間連接詞。', significationes: { en: 'until', es: 'hasta que', zh: '直到' } },
+                        { id_verbi: 'v4_9', terminus: 'ποιμὴν', analysis_morphologicus_en: 'Noun: nominative masculine singular.', analysis_morphologicus: 'Sustantivo: nominativo masculino singular.', analysis_morphologicus_zh: '名詞：主格、陽性、單數。', significationes: { en: 'shepherd', es: 'pastor', zh: '牧羊人' } },
+                        { id_verbi: 'v4_10', terminus: 'γεγονὸς', analysis_morphologicus_en: 'Perfect active participle (substantive): accusative neuter singular from γίγνομαι.', analysis_morphologicus: 'Participio de perfecto activo sustantivado: acusativo neutro singular de γίγνομαι.', analysis_morphologicus_zh: '完成時主動分詞(名詞化)：賓格、中性、單數，來自 γίγνομαι。', significationes: { en: 'what had happened', es: 'lo sucedido', zh: '發生的事' } },
+                        { id_verbi: 'v4_11', terminus: 'αἰσθόμενος', analysis_morphologicus_en: 'Aorist middle participle: nominative masculine singular from αἰσθάνομαι.', analysis_morphologicus: 'Participio de aoristo medio: nominativo masculino singular de αἰσθάνομαι.', analysis_morphologicus_zh: '不定過去時中間語態分詞：主格、陽性、單數，來自 αἰσθάνομαι。', significationes: { en: 'perceiving, noticing', es: 'dándose cuenta', zh: '注意到' } },
+                        { id_verbi: 'v4_12', terminus: 'προσδραμὼν', analysis_morphologicus_en: 'Aorist active participle: nominative masculine singular from προστρέχω.', analysis_morphologicus: 'Participio de aoristo activo: nominativo masculino singular de προστρέχω.', analysis_morphologicus_zh: '不定過去時主動分詞：主格、陽性、單數，來自 προστρέχω。', significationes: { en: 'running up to', es: 'corriendo hacia', zh: '跑過去' } },
+                        { id_verbi: 'v4_13', terminus: 'συνέλαβεν', analysis_morphologicus_en: 'Verb: 3rd person singular, aorist active indicative from συλλαμβάνω.', analysis_morphologicus: 'Verbo: 3ª persona del singular del aoristo de indicativo activo de συλλαμβάνω.', analysis_morphologicus_zh: '動詞：不定過去時、直陳語氣、主動語態、第三人稱單數，來自 συλλαμβάνω。', significationes: { en: 'captured', es: 'capturó', zh: '抓住' } },
+                        { id_verbi: 'v4_14', terminus: 'αὐτὸν', analysis_morphologicus_en: 'Personal pronoun: accusative masculine singular.', analysis_morphologicus: 'Pronombre personal: acusativo masculino singular.', analysis_morphologicus_zh: '人稱代名詞：賓格、陽性、單數。', significationes: { en: 'him', es: 'lo, a él', zh: '牠' } },
+                        { id_verbi: 'v4_15', terminus: 'περικόψας', analysis_morphologicus_en: 'Aorist active participle: nominative masculine singular from περικόπτω.', analysis_morphologicus: 'Participio de aoristo activo: nominativo masculino singular de περικόπτω.', analysis_morphologicus_zh: '不定過去時主動分詞：主格、陽性、單數，來自 περικόπτω。', significationes: { en: 'having clipped', es: 'habiendo cortado', zh: '剪掉之後' } },
+                        { id_verbi: 'v4_16', terminus: 'αὐτοῦ', analysis_morphologicus_en: 'Personal pronoun: genitive masculine singular.', analysis_morphologicus: 'Pronombre personal: genitivo masculino singular.', analysis_morphologicus_zh: '人稱代名詞：屬格、陽性、單數。', significationes: { en: 'his', es: 'de él, sus', zh: '牠的' } },
+                        { id_verbi: 'v4_17', terminus: 'ὀξύπτερα,', analysis_morphologicus_en: 'Adjective (substantive): accusative neuter plural.', analysis_morphologicus: 'Adjetivo sustantivado: acusativo neutro plural.', analysis_morphologicus_zh: '形容詞(名詞化)：賓格、中性、複數。', significationes: { en: 'flight feathers', es: 'plumas de vuelo', zh: '飛羽' } },
+                        { id_verbi: 'v4_18', terminus: 'ὡς', analysis_morphologicus_en: 'Temporal conjunction.', analysis_morphologicus: 'Conjunción temporal.', analysis_morphologicus_zh: '時間連接詞。', significationes: { en: 'when', es: 'cuando', zh: '當' } },
+                        { id_verbi: 'v4_19', terminus: 'ἑσπέρα', analysis_morphologicus_en: 'Noun: nominative feminine singular.', analysis_morphologicus: 'Sustantivo: nominativo femenino singular.', analysis_morphologicus_zh: '名詞：主格、陰性、單數。', significationes: { en: 'evening', es: 'tarde, anochecer', zh: '傍晚' } },
+                        { id_verbi: 'v4_20', terminus: 'κατέλαβε,', analysis_morphologicus_en: 'Verb: 3rd person singular, aorist active indicative from καταλαμβάνω.', analysis_morphologicus: 'Verbo: 3ª persona del singular del aoristo de indicativo activo de καταλαμβάνω.', analysis_morphologicus_zh: '動詞：不定過去時、直陳語氣、主動語態、第三人稱單數，來自 καταλαμβάνω。', significationes: { en: 'arrived, overtook', es: 'llegó', zh: '來臨' } },
+                        { id_verbi: 'v4_21', terminus: 'παισὶν', analysis_morphologicus_en: 'Noun: dative masculine plural.', analysis_morphologicus: 'Sustantivo: dativo masculino plural.', analysis_morphologicus_zh: '名詞：與格、陽性、複數。', significationes: { en: 'to his children', es: 'a sus hijos', zh: '給孩子們' } },
+                        { id_verbi: 'v4_22', terminus: 'ἐκόμισε', analysis_morphologicus_en: 'Verb: 3rd person singular, aorist active indicative from κομίζω.', analysis_morphologicus: 'Verbo: 3ª persona del singular del aoristo de indicativo activo de κομίζω.', analysis_morphologicus_zh: '動詞：不定過去時、直陳語氣、主動語態、第三人稱單數，來自 κομίζω。', significationes: { en: 'brought', es: 'llevó', zh: '帶給' } }
                     ]
                 },
                 {
                     id_orationis: 'o5',
-                    textus_latinus: "τῶν δὲ πυνθανομένων, τί εἴη τὸ ὄρνεον, ἔφη·",
+                    textus_graecus: "τῶν δὲ πυνθανομένων, τί εἴη τὸ ὄρνεον, ἔφη·",
                     translationes: { 
                         en: '<strong>English</strong>: And when they asked what kind of bird it was, he said:',
                         es: '<strong>Español</strong>: Y preguntándole ellos qué pájaro era, dijo:', 
                         zh: '<strong>中文（繁體）</strong>: 當他們問這是什麼鳥時，他說：'
                     },
                     verba: [
-                        { id_verbi: 'v5_1', terminus: 'πυνθανομένων', analysis_morphologicus_en: 'Present middle participle (substantive): genitive masculine plural from πυνθάνομαι (genitive absolute).', analysis_morphologicus: 'Participio de presente medio sustantivado: genitivo masculino plural de πυνθάνομαι (en genitivo absoluto).', analysis_morphologicus_zh: '現在時中間語態分詞(名詞化)：屬格、陽性、複數，來自 πυνθάνομαι (用於屬格獨立結構)。', significationes: { en: 'of those asking, when they asked', es: 'de los que preguntaban', zh: '當他們問' } },
+                        { id_verbi: 'v5_1', terminus: 'πυνθανομένων,', analysis_morphologicus_en: 'Present middle participle (substantive): genitive masculine plural from πυνθάνομαι (genitive absolute).', analysis_morphologicus: 'Participio de presente medio sustantivado: genitivo masculino plural de πυνθάνομαι (en genitivo absoluto).', analysis_morphologicus_zh: '現在時中間語態分詞(名詞化)：屬格、陽性、複數，來自 πυνθάνομαι (用於屬格獨立結構)。', significationes: { en: 'of those asking, when they asked', es: 'de los que preguntaban', zh: '當他們問' } },
                         { id_verbi: 'v5_2', terminus: 'τί', analysis_morphologicus_en: 'Interrogative pronoun: nominative neuter singular.', analysis_morphologicus: 'Pronombre interrogativo: nominativo neutro singular.', analysis_morphologicus_zh: '疑問代名詞：主格、中性、單數。', significationes: { en: 'what', es: 'qué', zh: '什麼' } },
                         { id_verbi: 'v5_3', terminus: 'εἴη', analysis_morphologicus_en: 'Verb: 3rd person singular, present active optative from εἰμί.', analysis_morphologicus: 'Verbo: 3ª persona del singular del presente de optativo activo de εἰμί.', analysis_morphologicus_zh: '動詞：現在時、祈願語氣、主動語態、第三人稱單數，來自 εἰμί。', significationes: { en: 'it might be, it was', es: 'era, fuese', zh: '是' } },
-                        { id_verbi: 'v5_4', terminus: 'ὄρνεον', analysis_morphologicus_en: 'Noun: nominative neuter singular.', analysis_morphologicus: 'Sustantivo: nominativo neutro singular.', analysis_morphologicus_zh: '名詞：主格、中性、單數。', significationes: { en: 'bird', es: 'pájaro', zh: '鳥' } },
+                        { id_verbi: 'v5_4', terminus: 'ὄρνεον,', analysis_morphologicus_en: 'Noun: nominative neuter singular.', analysis_morphologicus: 'Sustantivo: nominativo neutro singular.', analysis_morphologicus_zh: '名詞：主格、中性、單數。', significationes: { en: 'bird', es: 'pájaro', zh: '鳥' } },
                         { id_verbi: 'v5_5', terminus: 'ἔφη', analysis_morphologicus_en: 'Defective verb: 3rd person singular, imperfect active indicative from φημί.', analysis_morphologicus: 'Verbo defectivo: 3ª persona del singular del imperfecto de indicativo activo de φημί.', analysis_morphologicus_zh: '缺陷動詞：未完成時、直陳語氣、主動語態、第三人稱單數，來自 φημί。', significationes: { en: 'he said', es: 'dijo', zh: '說' } }
                     ]
                 },
                 {
                     id_orationis: 'o6',
-                    textus_latinus: "ὡς μὲν ἐγὼ σαφῶς οἶδα, κολοιός, ὡς δὲ αὐτὸς βούλεται, ἀετός.",
+                    textus_graecus: "ὡς μὲν ἐγὼ σαφῶς οἶδα, κολοιός, ὡς δὲ αὐτὸς βούλεται, ἀετός.",
                     translationes: { 
                         en: '<strong>English</strong>: "As far as I know for certain, a jackdaw; but as far as he himself wishes, an eagle."',
                         es: '<strong>Español</strong>: "Por lo que yo sé claramente, un grajo; pero por lo que él mismo quiere, un águila".', 
@@ -210,16 +210,16 @@
                         { id_verbi: 'v6_2', terminus: 'μὲν', analysis_morphologicus_en: 'Postpositive particle (introduces a contrast).', analysis_morphologicus: 'Partícula postpositiva (introduce contraste).', analysis_morphologicus_zh: '後置質詞 (引出對比)。', significationes: { en: 'on the one hand', es: 'por una parte', zh: '一方面' } },
                         { id_verbi: 'v6_3', terminus: 'ἐγὼ', analysis_morphologicus_en: 'Personal pronoun: nominative 1st person singular.', analysis_morphologicus: 'Pronombre personal: nominativo 1ª persona singular.', analysis_morphologicus_zh: '人稱代名詞：主格、第一人稱、單數。', significationes: { en: 'I', es: 'yo', zh: '我' } },
                         { id_verbi: 'v6_4', terminus: 'σαφῶς', analysis_morphologicus_en: 'Adverb of manner.', analysis_morphologicus: 'Adverbio de modo.', analysis_morphologicus_zh: '情狀副詞。', significationes: { en: 'clearly', es: 'claramente', zh: '清楚地' } },
-                        { id_verbi: 'v6_5', terminus: 'οἶδα', analysis_morphologicus_en: 'Verb: 1st person singular, perfect active indicative from οἶδα.', analysis_morphologicus: 'Verbo: 1ª persona del singular del perfecto de indicativo activo de οἶδα.', analysis_morphologicus_zh: '動詞：完成時、直陳語氣、主動語態、第一人稱單數，來自 οἶδα。', significationes: { en: 'I know', es: 'sé', zh: '知道' } },
+                        { id_verbi: 'v6_5', terminus: 'οἶδα,', analysis_morphologicus_en: 'Verb: 1st person singular, perfect active indicative from οἶδα.', analysis_morphologicus: 'Verbo: 1ª persona del singular del perfecto de indicativo activo de οἶδα.', analysis_morphologicus_zh: '動詞：完成時、直陳語氣、主動語態、第一人稱單數，來自 οἶδα。', significationes: { en: 'I know', es: 'sé', zh: '知道' } },
                         { id_verbi: 'v6_6', terminus: 'κολοιός,', analysis_morphologicus_en: 'Noun: nominative masculine singular (predicate with "to be" elided).', analysis_morphologicus: 'Sustantivo: nominativo masculino singular (atributo con verbo ser elidido).', analysis_morphologicus_zh: '名詞：主格、陽性、單數 (省略動詞 είναι 的表語)。', significationes: { en: 'a jackdaw', es: 'un grajo', zh: '一隻寒鴉' } },
                         { id_verbi: 'v6_7', terminus: 'αὐτὸς', analysis_morphologicus_en: 'Personal pronoun (intensive): nominative masculine singular.', analysis_morphologicus: 'Pronombre personal (intensivo): nominativo masculino singular.', analysis_morphologicus_zh: '人稱代名詞 (強調)：主格、陽性、單數。', significationes: { en: 'he himself', es: 'él mismo', zh: '牠自己' } },
-                        { id_verbi: 'v6_8', terminus: 'βούλεται', analysis_morphologicus_en: 'Verb: 3rd person singular, present middle indicative from βούλομαι.', analysis_morphologicus: 'Verbo: 3ª persona del singular del presente de indicativo medio de βούλομαι.', analysis_morphologicus_zh: '動詞：現在時、直陳語氣、中間語態、第三人稱單數，來自 βούλομαι。', significationes: { en: 'he wishes, he wants', es: 'quiere, desea', zh: '想要' } },
+                        { id_verbi: 'v6_8', terminus: 'βούλεται,', analysis_morphologicus_en: 'Verb: 3rd person singular, present middle indicative from βούλομαι.', analysis_morphologicus: 'Verbo: 3ª persona del singular del presente de indicativo medio de βούλομαι.', analysis_morphologicus_zh: '動詞：現在時、直陳語氣、中間語態、第三人稱單數，來自 βούλομαι。', significationes: { en: 'he wishes, he wants', es: 'quiere, desea', zh: '想要' } },
                         { id_verbi: 'v6_9', terminus: 'ἀετός.', analysis_morphologicus_en: 'Noun: nominative masculine singular (predicate with "to be" elided).', analysis_morphologicus: 'Sustantivo: nominativo masculino singular (atributo con verbo ser elidido).', analysis_morphologicus_zh: '名詞：主格、陽性、單數 (省略動詞 είναι 的表語)。', significationes: { en: 'an eagle', es: 'un águila', zh: '一隻老鷹' } }
                     ]
                 },
                 {
                     id_orationis: 'o7',
-                    textus_latinus: "οὕτως ἡ πρὸς τοὺς ὑπερέχοντας ἅμιλλα πρὸς τῷ μηδὲν ἀνύειν καὶ ἐπὶ συμφοραῖς προσκτᾶται γέλωτα.",
+                    textus_graecus: "οὕτως ἡ πρὸς τοὺς ὑπερέχοντας ἅμιλλα πρὸς τῷ μηδὲν ἀνύειν καὶ ἐπὶ συμφοραῖς προσκτᾶται γέλωτα.",
                     translationes: { 
                         en: '<strong>English (Moral)</strong>: Thus, rivalry against those who are superior, in addition to accomplishing nothing, also earns ridicule in the midst of misfortune.',
                         es: '<strong>Español (Moraleja)</strong>: Así la rivalidad contra los que son superiores, además de no lograr nada, también se gana la burla en medio de las desgracias.', 
@@ -250,6 +250,8 @@
         const paragrafusContentus = document.getElementById('paragrafus-contentus');
         const marginaliaContentus = document.getElementById('marginalia-contentus');
         const languageSwitcher = document.getElementById('language-switcher');
+        const subtitle = document.getElementById('subtitle');
+        const footerText = document.getElementById('footer-text');
 
         let idiomaActivo = 'en'; // 'en', 'es', o 'zh'
         let activumVerbum = null;
@@ -261,6 +263,8 @@
                 translationTitle: 'Sentence Translation',
                 selectWordText: 'Select a word to see its analysis.',
                 meaningLabel: 'Meaning',
+                subtitleText: 'The Eagle, the Jackdaw, and the Shepherd',
+                footerTextContent: '<i>Click a word to see its analysis and the sentence translation.</i>',
                 analysisKey: 'analysis_morphologicus_en',
                 significationKey: 'en',
                 translationKey: 'en'
@@ -270,6 +274,8 @@
                 translationTitle: 'Traducción de la Frase',
                 selectWordText: 'Seleccione una palabra para ver su análisis.',
                 meaningLabel: 'Significado',
+                subtitleText: 'El Águila, el Grajo y el Pastor',
+                footerTextContent: '<i>Haz clic en una palabra para ver su análisis y la traducción de la frase.</i>',
                 analysisKey: 'analysis_morphologicus',
                 significationKey: 'es',
                 translationKey: 'es'
@@ -279,6 +285,8 @@
                 translationTitle: '句子翻譯',
                 selectWordText: '請選取一個單字以查看其分析。',
                 meaningLabel: '意義',
+                subtitleText: '老鷹、寒鴉與牧羊人',
+                footerTextContent: '<i>點擊一個單字以查看其分析及句子翻譯。</i>',
                 analysisKey: 'analysis_morphologicus_zh',
                 significationKey: 'zh',
                 translationKey: 'zh'
@@ -286,23 +294,28 @@
         };
 
         function reddeParagrafum() {
-            let fullText = paragrafus.orationes.map(o => o.textus_latinus).join(' ');
+            let fullText = paragrafus.orationes.map(o => o.textus_graecus).join(' ');
             let allVerba = paragrafus.orationes.flatMap(o => o.verba.map(v => ({...v, oratioId: o.id_orationis})));
 
-            allVerba.sort((a,b) => b.terminus.length - a.terminus.length);
+            allVerba.sort((a,b) => b.terminus.replace(/[,.·;:]/g, '').length - a.terminus.replace(/[,.·;:]/g, '').length);
 
             allVerba.forEach(verbum => {
-                const regex = new RegExp(`(${verbum.terminus.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')})(?![^<]*?>|[^<>]*?<\/)`, 'g');
+                const cleanTerminus = verbum.terminus.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                const regex = new RegExp(`\\b(${cleanTerminus})\\b(?![^<]*?>|[^<>]*?<\\/)`, 'g');
                 const replacement = `<span class="verbum" data-verbum-id="${verbum.id_verbi}" data-oratio-id="${verbum.oratioId}">$1</span>`;
                 fullText = fullText.replace(regex, replacement);
             });
 
-            paragrafusContentus.innerHTML = fullText;
+            paragrafusContentus.innerHTML = fullText.replace(/·/g, '· ');
         }
         
         function actualizaMarginalia() {
             let htmlContentus = '';
             const config = langConfig[idiomaActivo];
+
+            // Actualizar textos de UI
+            subtitle.textContent = config.subtitleText;
+            footerText.innerHTML = config.footerTextContent;
 
             // Sección de Análisis Morfológico
             htmlContentus += `<section id="analysis-morphologicus-section" class="mb-6"><h3 class="text-xl font-semibold text-gray-800 mb-4">${config.analysisTitle}</h3>`;
@@ -333,7 +346,7 @@
                     <section id="analysis-orationis-section">
                         <h3 class="text-xl font-semibold text-gray-800 mb-4">${config.translationTitle}</h3>
                         <div class="space-y-3">
-                            <p class="text-gray-800 textum-classicum bg-stone-200 p-3 rounded-md">${activaOratio.textus_latinus}</p>
+                            <p class="text-gray-800 textum-classicum bg-stone-200 p-3 rounded-md">${activaOratio.textus_graecus}</p>
                             <div class="text-gray-700 mt-2">${translationText}</div>
                         </div>
                     </section>`;
@@ -394,3 +407,4 @@
     </script>
 </body>
 </html>
+```
