@@ -48,9 +48,26 @@
         .main-layout { padding: 1rem; padding-bottom: calc(45vh + 2rem); }
         #marginalia-sinistra { position: fixed; bottom: 0; left: 0; right: 0; width: 100%; height: 45vh; z-index: 50; border-top: 2px solid #d6d3d1; box-shadow: 0 -4px 10px rgba(0,0,0,0.1); transform: translateY(0); transition: transform 0.3s ease-in-out; }
         
+        /* --- LAYOUT PARA ORDENADOR --- */
         @media (min-width: 1024px) {
-            .main-layout { display: grid; grid-template-columns: 24rem 1fr; gap: 2rem; padding: 2rem; }
-            #marginalia-sinistra { position: sticky; top: 2rem; bottom: auto; left: auto; right: auto; height: calc(100vh - 4rem); width: auto; border-top: none; box-shadow: var(--tw-shadow-xl); }
+            .main-layout {
+                display: grid;
+                /* ✅ ESTA ES LA LÍNEA MODIFICADA */
+                grid-template-columns: 2fr 1fr; /* Texto principal (2/3), Análisis (1/3) */
+                gap: 2rem;
+                padding: 2rem;
+            }
+            #marginalia-sinistra {
+                position: sticky;
+                top: 2rem;
+                bottom: auto;
+                left: auto;
+                right: auto;
+                height: calc(100vh - 4rem);
+                width: auto;
+                border-top: none;
+                box-shadow: var(--tw-shadow-xl);
+            }
         }
     </style>
 </head>
@@ -231,7 +248,7 @@
                         { id_verbi: 'v7_3', terminus: 'πρὸς', analysis_morphologicus_en: 'Preposition (takes acc. / dat.).', analysis_morphologicus: 'Preposición de acusativo / dativo.', analysis_morphologicus_zh: '介詞（搭配賓格/與格）。', significationes: { en: 'against / in addition to', es: 'contra / además de', zh: '對抗 / 除了...之外' } },
                         { id_verbi: 'v7_4', terminus: 'ὑπερέχοντας', analysis_morphologicus_en: 'Present active participle (substantive): accusative masculine plural from ὑπερέχω.', analysis_morphologicus: 'Participio de presente activo sustantivado: acusativo masculino plural de ὑπερέχω.', analysis_morphologicus_zh: '現在時主動分詞(名詞化)：賓格、陽性、複數，來自 ὑπερέχω。', significationes: { en: 'those who are superior', es: 'los que son superiores', zh: '優越者' } },
                         { id_verbi: 'v7_5', terminus: 'ἅμιλλα', analysis_morphologicus_en: 'Noun: nominative feminine singular.', analysis_morphologicus: 'Sustantivo: nominativo femenino singular.', analysis_morphologicus_zh: '名詞：主格、陰性、單數。', significationes: { en: 'rivalry, competition', es: 'rivalidad', zh: '競爭' } },
-                        { id_verbi: 'v7_6', terminus: 'τῷ', analysis_morphologicus_en: 'Article: dative neuter singular.', analysis_morphologicus: 'Artículo: dativo neutro singular.', analysis_morphologicus_zh: '冠詞：與格、中性、單數。', significationes: { en: 'to the (act of)', es: 'al', zh: '在...' } },
+                        { id_verbi: 'v7_6', terminus: 'τῷ', analysis_morphologicus_en: 'Article: dative neuter singular.', analysis_morphologicus: 'Artículo: dativo neuter singular.', analysis_morphologicus_zh: '冠詞：與格、中性、單數。', significationes: { en: 'to the (act of)', es: 'al', zh: '在...' } },
                         { id_verbi: 'v7_7', terminus: 'ἀνύειν', analysis_morphologicus_en: 'Present active infinitive (substantive) from ἀνύω.', analysis_morphologicus: 'Infinitivo de presente activo sustantivado de ἀνύω.', analysis_morphologicus_zh: '現在時主動不定式(名詞化)，來自 ἀνύω。', significationes: { en: 'to accomplish', es: 'lograr, conseguir', zh: '完成' } },
                         { id_verbi: 'v7_8', terminus: 'μηδὲν', analysis_morphologicus_en: 'Indefinite pronoun: accusative neuter singular.', analysis_morphologicus: 'Pronombre indefinido: acusativo neutro singular.', analysis_morphologicus_zh: '不定代名詞：賓格、中性、單數。', significationes: { en: 'nothing', es: 'nada', zh: '什麼都沒有' } },
                         { id_verbi: 'v7_9', terminus: 'καὶ', analysis_morphologicus_en: 'Adverb.', analysis_morphologicus: 'Adverbio.', analysis_morphologicus_zh: '副詞。', significationes: { en: 'also', es: 'también', zh: '也' } },
@@ -407,4 +424,3 @@
     </script>
 </body>
 </html>
-```
